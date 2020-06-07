@@ -1,4 +1,10 @@
 body {
   background-color: black;
   color: white;
-};
+}
+
+#algo {
+  background-color: grey ;
+  color: black;
+  height: 80px;
+}
