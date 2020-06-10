@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+.display-flex {
+  display: flex;
+}
+
+.alto-estandar {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.alto-estandar img {
+  width: auto;
+  height: auto;
+}
+
 body {
   background-color: black;
   color: white;
@@ -13,4 +28,33 @@ body {
   background-color: gray ;
   color: black;
   height: 80px;
+}
+
+
+
+.pieza {
+  position: absolute;
+  /* background-color: gray; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.cerebro {
+  background-image: url('../image/cerebro.png');
+}
+
+.corazon {
+  background-image: url('../image/corazon.png');
+}
+
+.expresion {
+  background-image: url('../image/expresion.png');
+}
+
+.gender {
+  background-image: url('../image/gender.png');
 }
