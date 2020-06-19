@@ -1,6 +1,9 @@
 const memoryGame = {
   render: () => {
     return `
+      <div class="buttons">
+        <a href="/" class="btn">Home</a>
+      </div>
       <section class="memory-game">
         <div class="memory-card" data-framework="identity">
           <img class="front-face" src="../image/image-memory-game/cerebro.png" alt="identity" />
