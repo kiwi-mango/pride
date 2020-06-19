@@ -2,7 +2,7 @@ const puzzle = {
   render: () => {
     return `
     <svg width="600" height="600" id="entorno">
-		<g id="fondo"><image xlink:href="../image/image-puzzle/genderbread.png" width="395" height="442" x="200" y="100"/></g>
+		<g id="fondo"><image xlink:href="../image/image-puzzle/genderbread.png" width="395" height="442" x="200" y="50"/></g>
 		<g class="padre" id="0"><image xlink:href="../image/image-puzzle/fila-1-col-1.png" class="movil"/></g>
 		<g class="padre" id="1"><image xlink:href="../image/image-puzzle/fila-1-col-2.png" class="movil"/></g>
 		<g class="padre" id="2"><image xlink:href="../image/image-puzzle/fila-1-col-3.png" class="movil"/></g>
@@ -30,7 +30,7 @@ const puzzle = {
     var entorno = document.getElementById('entorno');
 
     const origX = [200,332,463,201,331,462,200,332,463];
-    const origY = [100,100,100,247,247,247,394,394,394];
+    const origY = [50,50,50,197,197,197,344,344,344];
 
     const testing = () => {
       let bien_ubicada = 0

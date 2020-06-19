@@ -132,9 +132,8 @@ footer a {
 
 .memory-game {
   width: 550px;
-  height: 500px;
-  margin: auto;
-  margin-top: 80px;
+  height: 495px;
+  margin: 5px auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;

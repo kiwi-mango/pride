@@ -2,7 +2,7 @@ const genderBread = {
   render: () => {
     return `
     <svg width="600" height="600" id="entorno">
-      <g><image xlink:href="../image/image-drag/genderColor.png" width="401" height="494" x="200" y="100"/></g>
+      <g><image xlink:href="../image/image-drag/genderColor.png" width="401" height="494" x="200" y="30"/></g>
       <g class="padre" id="0"><image xlink:href="../image/image-drag/cerebro.png" class="movil"/></g>
       <g class="padre" id="1"><image xlink:href="../image/image-drag/gender.png" class="movil"/></g>
       <g class="padre" id="2"><image xlink:href="../image/image-drag/expression.png" class="movil"/></g>
@@ -25,7 +25,7 @@ const genderBread = {
     var entorno = document.getElementById('entorno');
     
     const origX = [352,355,169,393];
-    const origY = [97,403,76,283];
+    const origY = [27,333,6,213];
     
     const testing = () => {
       let bien_ubicada = 0
