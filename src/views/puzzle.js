@@ -1,6 +1,9 @@
 const puzzle = {
   render: () => {
     return `
+    <div class="buttons">
+      <a href="/" class="btn">Home</a>
+    </div>
     <svg width="600" height="600" id="entorno">
 		<g id="fondo"><image xlink:href="../image/image-puzzle/genderbread.png" width="395" height="442" x="200" y="50"/></g>
 		<g class="padre" id="0"><image xlink:href="../image/image-puzzle/fila-1-col-1.png" class="movil"/></g>
