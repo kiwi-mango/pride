@@ -52,7 +52,7 @@ const puzzle = {
 
         const imagesURL = [
           "https://media.giphy.com/media/Ga1UmWZ9jdYOc/giphy.gif",
-          "hhttps://media.giphy.com/media/3o72FbN0o9oTnGwiOs/giphy.gif",
+          "https://media.giphy.com/media/3o72FbN0o9oTnGwiOs/giphy.gif",
           "https://media.giphy.com/media/3og0IRiPZ8mZoKa7te/giphy.gif",
           "https://media.giphy.com/media/fYNy092DoKNpshv70U/giphy.gif",
           "https://media.giphy.com/media/3ohs7MXqYDGtNzc3oQ/giphy.gif"
