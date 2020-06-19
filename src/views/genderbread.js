@@ -1,6 +1,9 @@
 const genderBread = {
   render: () => {
     return `
+    <div class="buttons">
+      <a href="/" class="btn">Home</a>
+    </div>
     <svg width="600" height="600" id="entorno">
       <g><image xlink:href="../image/image-drag/genderColor.png" width="401" height="494" x="200" y="30"/></g>
       <g class="padre" id="0"><image xlink:href="../image/image-drag/cerebro.png" class="movil"/></g>
@@ -39,7 +42,28 @@ const genderBread = {
         }
       }
       if (bien_ubicada == 4) {
-        alert('muy bien')
+        const getRandomInt = () => Math.floor(Math.random() * (4 - 0)) + 0;
+
+        const imagesURL = [
+          "https://media.giphy.com/media/Ga1UmWZ9jdYOc/giphy.gif",
+          "https://media.giphy.com/media/3o72FbN0o9oTnGwiOs/giphy.gif",
+          "https://media.giphy.com/media/3og0IRiPZ8mZoKa7te/giphy.gif",
+          "https://media.giphy.com/media/fYNy092DoKNpshv70U/giphy.gif",
+          "https://media.giphy.com/media/3ohs7MXqYDGtNzc3oQ/giphy.gif"
+        ];
+
+        const phrases = [
+          "You are amazing!",
+          "You are super cool!",
+          "You are special!",
+          "You are unique!",
+          "You are important"
+        ];
+
+        swal({
+          title: phrases[getRandomInt()],
+          icon: imagesURL[getRandomInt()],
+        });
     
       }
     } 
