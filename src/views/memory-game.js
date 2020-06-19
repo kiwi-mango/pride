@@ -7,56 +7,56 @@ const memoryGame = {
       <section class="memory-game">
         <div class="memory-card" data-framework="identity">
           <img class="front-face" src="../image/image-memory-game/cerebro.png" alt="identity" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
         <div class="memory-card" data-framework="identity">
           <img class="front-face" src="../image/image-memory-game/cerebro.png" alt="identity" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
 
         <div class="memory-card" data-framework="expression">
           <img class="front-face" src="../image/image-memory-game/genderColor.png" alt="expression" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
         <div class="memory-card" data-framework="expression">
           <img class="front-face" src="../image/image-memory-game/genderColor.png" alt="expression" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
 
         <div class="memory-card" data-framework="anatomical-Sex">
           <img class="front-face" src="../image/image-memory-game/corazon.png" alt="anatomical Sex" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
         <div class="memory-card" data-framework="anatomical-Sex">
           <img class="front-face" src="../image/image-memory-game/corazon.png" alt="anatomical Sex" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
 
         <div class="memory-card" data-framework="SexAssigedAtBirth">
           <img class="front-face" src="../image/image-memory-game/gender.png" alt="SexAssigedAtBirth" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
         <div class="memory-card" data-framework="SexAssigedAtBirth">
           <img class="front-face" src="../image/image-memory-game/gender.png" alt="SexAssigedAtBirth" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
 
         <div class="memory-card" data-framework="SexuallyAttracted">
           <img class="front-face" src="../image/image-memory-game/Sexually-Attracted.png" alt="SexuallyAttracted" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
         <div class="memory-card" data-framework="SexuallyAttracted">
           <img class="front-face" src="../image/image-memory-game/Sexually-Attracted.png" alt="SexuallyAttracted" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
 
         <div class="memory-card" data-framework="RomanticallyAttracted">
           <img class="front-face" src="../image/image-memory-game/Romantically-Attracted.png" alt="RomanticallyAttracted" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
         <div class="memory-card" data-framework="RomanticallyAttracted">
           <img class="front-face" src="../image/image-memory-game/Romantically-Attracted.png" alt="RomanticallyAttracted" />
-          <img class="back-face" src="../image/image-memory-game/question-mark.png" alt="question mark" />
+          <img class="back-face" src="../image/image-memory-game/hashtag.png" alt="hashtag" />
         </div>
       </section>
     `  
