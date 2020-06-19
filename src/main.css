@@ -4,24 +4,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-.display-flex {
-  display: flex;
-}
-
-.alto-estandar {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-}
-
-.alto-estandar img {
-  width: auto;
-  height: auto;
-}
-
-=======
->>>>>>> 43819361ceb07ba2e677a3af58101930f17cbd49
 body {
   background: white;
   height: 100vh;
@@ -40,15 +22,6 @@ footer {
   align-items: center;
 }
 
-<<<<<<< HEAD
-#algo {
-  background-color: gray ;
-  color: black;
-  height: 80px;
-}
-
-
-=======
 header {
   background-color: black;
   color: aqua;
@@ -80,7 +53,6 @@ footer a {
   width: auto;
   height: auto;
 }
->>>>>>> 43819361ceb07ba2e677a3af58101930f17cbd49
 
 .pieza {
   position: absolute;
@@ -109,15 +81,6 @@ footer a {
   background-image: url('../image/gender.png');
 }
 
-<<<<<<< HEAD
-/* Init Section memory Card */
-
-body {
-  height: 100vh;
-  background: white;
-}
-
-=======
 .home {
   width: 100%;
   padding: 5%;
@@ -167,7 +130,6 @@ body {
 
 /* Init Section memory Card */
 
->>>>>>> 43819361ceb07ba2e677a3af58101930f17cbd49
 .memory-game {
   width: 550px;
   height: 500px;
@@ -214,18 +176,10 @@ body {
 }
 
 /* Inicia estilos puzzle */
-<<<<<<< HEAD
-=======
-
->>>>>>> 43819361ceb07ba2e677a3af58101930f17cbd49
 #entorno {
   display: block;
   margin: 0 auto;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 43819361ceb07ba2e677a3af58101930f17cbd49
 #fondo {
   opacity: 0.3;
 }
