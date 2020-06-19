@@ -4,6 +4,41 @@
   box-sizing: border-box;
 }
 
+body {
+  background: white;
+  height: 100vh;
+}
+
+footer {
+  background-color: black ;
+  bottom: 0;
+  color: white;
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  font-size: large;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header {
+  background-color: black;
+  color: aqua;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 20%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
 .display-flex {
   display: flex;
 }
@@ -18,19 +53,6 @@
   width: auto;
   height: auto;
 }
-
-body {
-  background-color: black;
-  color: white;
-}
-
-#algo {
-  background-color: gray ;
-  color: black;
-  height: 80px;
-}
-
-
 
 .pieza {
   position: absolute;
@@ -59,18 +81,59 @@ body {
   background-image: url('../image/gender.png');
 }
 
-/* Init Section memory Card */
-
-body {
-  height: 100vh;
-  background: white;
+.home {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.image-home {
+  width: 30%;
+}
+
+.buttons {
+  width: 25%;
+  margin-left: 10%;
+}
+
+.btn {
+  background: #f2bdf2;
+  background-image: -webkit-linear-gradient(top, #f2bdf2, #2b76b8);
+  background-image: -moz-linear-gradient(top, #f2bdf2, #2b76b8);
+  background-image: -ms-linear-gradient(top, #f2bdf2, #2b76b8);
+  background-image: -o-linear-gradient(top, #f2bdf2, #2b76b8);
+  background-image: linear-gradient(to bottom, #f2bdf2, #2b76b8);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin: 10%;
+}
+
+.btn:hover {
+  background: #ffb73b;
+  background-image: -webkit-linear-gradient(top, #ffb73b, #34d939);
+  background-image: -moz-linear-gradient(top, #ffb73b, #34d939);
+  background-image: -ms-linear-gradient(top, #ffb73b, #34d939);
+  background-image: -o-linear-gradient(top, #ffb73b, #34d939);
+  background-image: linear-gradient(to bottom, #ffb73b, #34d939);
+  text-decoration: none;
+}
+
+/* Init Section memory Card */
 
 .memory-game {
   width: 550px;
-  height: 500px;
-  margin: auto;
-  margin-top: 80px;
+  height: 495px;
+  margin: 5px auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
