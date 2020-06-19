@@ -1,10 +1,21 @@
 import GenderBread from './views/genderbread.js';
 import MemoryGame from './views/memory-game.js';
 import GenderPuzzle from './views/puzzle.js'
+<<<<<<< HEAD
+=======
+import Home from './views/home.js';
+>>>>>>> 43819361ceb07ba2e677a3af58101930f17cbd49
 
 const route = [
   {
     path:'/',
+<<<<<<< HEAD
+=======
+    component: Home,
+  },
+  {
+    path:'/genderbread',
+>>>>>>> 43819361ceb07ba2e677a3af58101930f17cbd49
     component: GenderBread,
   },
   {

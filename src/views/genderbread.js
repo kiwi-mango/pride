@@ -107,9 +107,7 @@ const genderBread = {
       element.setAttribute("y",Math.floor((Math.random() * 409) + 1));
       element.addEventListener("mousedown",seleccionarPieza);
     }
-
   }
-
 }
 
 export default genderBread;
