@@ -46,8 +46,30 @@ const puzzle = {
           bien_ubicada += 1;
         }
       }
+
       if (bien_ubicada == 9) {
-        alert('muy bien')
+        const getRandomInt = () => Math.floor(Math.random() * (4 - 0)) + 0;
+
+        const imagesURL = [
+          "https://media.giphy.com/media/Ga1UmWZ9jdYOc/giphy.gif",
+          "hhttps://media.giphy.com/media/3o72FbN0o9oTnGwiOs/giphy.gif",
+          "https://media.giphy.com/media/3og0IRiPZ8mZoKa7te/giphy.gif",
+          "https://media.giphy.com/media/fYNy092DoKNpshv70U/giphy.gif",
+          "https://media.giphy.com/media/3ohs7MXqYDGtNzc3oQ/giphy.gif"
+        ];
+
+        const phrases = [
+          "You are amazing!",
+          "You are super cool!",
+          "You are special!",
+          "You are unique!",
+          "You are important"
+        ];
+
+        swal({
+          title: phrases[getRandomInt()],
+          icon: imagesURL[getRandomInt()],
+        });
 
       }
     } 
