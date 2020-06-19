@@ -17,7 +17,6 @@ const genderBread = {
           </div>
         </div>
       </div>
-      <footer id="algo">¡kiwi-mango!</footer>
     `  
   },
   afterrender : () => {
