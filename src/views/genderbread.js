@@ -1,8 +1,8 @@
 const genderBread = {
   render: () => {
     return `
-    <div class="buttons">
-      <a href="/" class="btn">Home</a>
+    <div class="home_buttons">
+      <a href="/" class="btn"><img src="../image/bienes-raices.svg" alt="home"/></a>
     </div>
     <svg width="600" height="600" id="entorno">
       <g><image xlink:href="../image/image-drag/genderColor.png" width="401" height="494" x="200" y="30"/></g>
