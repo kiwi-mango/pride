@@ -5,21 +5,21 @@ const genderBread = {
       <a href="/" class="btn"><img src="../image/bienes-raices.svg" alt="home"/></a>
     </div>
     <section class="">
-      <div  data-type="cerebro" class="mensaje msj-cerebro  hidden__mensaje">
-        <h4>Identity</h4>
+      <div  data-type="cerebro" class="animate__rotateIn mensaje msj-cerebro  hidden__mensaje">
+        <h3>Identity</h3>
         <img src="../image/image-drag/Identity.png"/>
       </div>
       <div  data-type="corazon" class="mensaje msj-corazon  hidden__mensaje">
-        <h4>Attraction</h4>
+        <h3>Attraction</h3>
         <img src="../image/image-drag/Attracted.png"/>
       </div>
-      <div  data-type="genero" class="mensaje msj-gender  hidden__mensaje">
-        <h4>Gender</h4>
+      <div  data-type="genero" class="animate__zoomInLeft mensaje msj-gender  hidden__mensaje">
+        <h3>Gender</h3>
         <img src="../image/image-drag/Sex-message.png"/>
         <img src="../image/image-drag/Sex-Assigned.png"/>
       </div>
       <div  data-type="expresion" class="mensaje msj-expression  hidden__mensaje">
-        <h4>Expression</h4>
+        <h3>Expression</h3>
         <img src="../image/image-drag/Expression-message.png"/>
       </div>
       
@@ -98,10 +98,10 @@ const genderBread = {
       let ide = e.target.parentNode.id;
       
       if (origX[ide] == posx && origY[ide] == posy) {
+        e.target.removeEventListener('mousedown',seleccionarPieza)
         listaMensajes.forEach(item => {
           if (item.dataset.type == piezaToMove && item.classList.contains('hidden__mensaje')) {
-            console.log('habilitar');
-            item.classList.remove('hidden__mensaje')
+            item.classList.remove('hidden__mensaje');
           }
           
         });
@@ -165,11 +165,12 @@ const genderBread = {
     
     for (let i = 0; i < piezas.length; i++) {
       const element = piezas[i];
-      element.setAttribute("width",tamWidht[i]);
-      element.setAttribute("height",tamHeight[i]);
-      element.setAttribute("x",Math.floor((Math.random() * 10) + 1));
-      element.setAttribute("y",Math.floor((Math.random() * 409) + 1));
-      element.addEventListener("mousedown",seleccionarPieza);
+      element.setAttribute('width',tamWidht[i]);
+      element.setAttribute('height',tamHeight[i]);
+      element.style.cursor = 'pointer';
+      element.setAttribute('x',Math.floor((Math.random() * 10) + 1));
+      element.setAttribute('y',Math.floor((Math.random() * 409) + 1));
+      element.addEventListener('mousedown',seleccionarPieza);
     }
   }
 }
