@@ -4,12 +4,33 @@ const genderBread = {
     <div class="home_buttons">
       <a href="/" class="btn"><img src="../image/bienes-raices.svg" alt="home"/></a>
     </div>
-    <svg width="600" height="600" id="entorno">
-      <g><image xlink:href="../image/image-drag/genderColor.png" width="401" height="494" x="200" y="30"/></g>
-      <g class="padre" id="0"><image xlink:href="../image/image-drag/cerebro.png" class="movil"/></g>
-      <g class="padre" id="1"><image xlink:href="../image/image-drag/gender.png" class="movil"/></g>
-      <g class="padre" id="2"><image xlink:href="../image/image-drag/expression.png" class="movil"/></g>
-      <g class="padre" id="3"><image xlink:href="../image/image-drag/corazon.png" class="movil"/></g>
+    <section class="">
+      <div  data-type="cerebro" class="mensaje msj-cerebro  hidden__mensaje">
+        <h4>Identity</h4>
+        <img src="../image/image-drag/Identity.png"/>
+      </div>
+      <div  data-type="corazon" class="mensaje msj-corazon  hidden__mensaje">
+        <h4>Attraction</h4>
+        <img src="../image/image-drag/Attracted.png"/>
+      </div>
+      <div  data-type="genero" class="mensaje msj-gender  hidden__mensaje">
+        <h4>Gender</h4>
+        <img src="../image/image-drag/Sex-message.png"/>
+        <img src="../image/image-drag/Sex-Assigned.png"/>
+      </div>
+      <div  data-type="expresion" class="mensaje msj-expression  hidden__mensaje">
+        <h4>Expression</h4>
+        <img src="../image/image-drag/Expression-message.png"/>
+      </div>
+      
+    </section>
+    <svg width="800" height="600" id="entorno">
+    
+      <g><image xlink:href="../image/image-drag/genderColor.png" width="401" height="494" x="200" y="35"/></g>
+      <g class="padre" id="0" data-type="cerebro"><image xlink:href="../image/image-drag/cerebro.png" class="movil"/></g>
+      <g class="padre" id="1" data-type="genero"><image xlink:href="../image/image-drag/gender.png" class="movil"/></g>
+      <g class="padre" id="2" data-type="expresion"><image xlink:href="../image/image-drag/expression.png" class="movil"/></g>
+      <g class="padre" id="3" data-type="corazon"><image xlink:href="../image/image-drag/corazon.png" class="movil"/></g>
     </svg>
     `  
   },
@@ -30,13 +51,14 @@ const genderBread = {
     const origX = [352,355,169,393];
     const origY = [27,333,6,213];
     
-    const testing = () => {
+    const testing = (e) => {
       let bien_ubicada = 0
       let padres = document.getElementsByClassName('padre');
       for (let i = 0; i < piezas.length; i++) {
         let posx = parseFloat(padres[i].firstChild.getAttribute('x'));
         let posy = parseFloat(padres[i].firstChild.getAttribute('y'));
         let ide = padres[i].getAttribute('id');
+        
         if (origX[ide] == posx && origY[ide] == posy) {
           bien_ubicada += 1;
         }
@@ -66,8 +88,26 @@ const genderBread = {
         });
     
       }
-    } 
-    
+    };
+
+    const showMessage = (e) => {
+      let piezaToMove = e.target.parentNode.dataset.type;
+      const listaMensajes = document.querySelectorAll('.mensaje');
+      let posx = e.target.getAttribute('x')
+      let posy = e.target.getAttribute('y')
+      let ide = e.target.parentNode.id;
+      
+      if (origX[ide] == posx && origY[ide] == posy) {
+        listaMensajes.forEach(item => {
+          if (item.dataset.type == piezaToMove && item.classList.contains('hidden__mensaje')) {
+            console.log('habilitar');
+            item.classList.remove('hidden__mensaje')
+          }
+          
+        });
+        
+      }
+    };
     
     const iman = () => {
       for (let i = 0; i < piezas.length; i++) {  
@@ -88,15 +128,15 @@ const genderBread = {
       return entorno.lastChild.firstChild;
     };
     
-    const deseleccionarPieza = (evt) => {
+    const deseleccionarPieza = (e) => {
       if (elementSelect != 0 ) {
         elementSelect.removeEventListener('mousemove', moverPieza);
         elementSelect.removeEventListener('mouseout', deseleccionarPieza);
         elementSelect.removeEventListener('mouseup', deseleccionarPieza);
         elementSelect = 0;
       }
-    
-      testing()
+      showMessage(e)
+      testing(e)
     }
     
     const moverPieza= (e) => {
