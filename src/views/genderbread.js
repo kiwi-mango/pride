@@ -22,10 +22,8 @@ const genderBread = {
         <h3>Expression</h3>
         <img src="../image/image-drag/Expression-message.png"/>
       </div>
-      
     </section>
-    <svg width="800" height="600" id="entorno">
-    
+    <svg width="800" height="600" id="entorno">   
       <g><image xlink:href="../image/image-drag/genderColor.png" width="401" height="494" x="200" y="35"/></g>
       <g class="padre" id="0" data-type="cerebro"><image xlink:href="../image/image-drag/cerebro.png" class="movil"/></g>
       <g class="padre" id="1" data-type="genero"><image xlink:href="../image/image-drag/gender.png" class="movil"/></g>
@@ -98,14 +96,13 @@ const genderBread = {
       let ide = e.target.parentNode.id;
       
       if (origX[ide] == posx && origY[ide] == posy) {
+
         e.target.removeEventListener('mousedown',seleccionarPieza)
         listaMensajes.forEach(item => {
           if (item.dataset.type == piezaToMove && item.classList.contains('hidden__mensaje')) {
             item.classList.remove('hidden__mensaje');
-          }
-          
-        });
-        
+          }     
+        });       
       }
     };
     
