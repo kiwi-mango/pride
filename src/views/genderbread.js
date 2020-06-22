@@ -20,7 +20,7 @@ const genderBread = {
       </div>
       <div  data-type="expresion" class="mensaje msj-expression  hidden__mensaje">
         <h3>Expression</h3>
-        <img src="../image/image-drag/Expression-message.png"/>
+        <img src="../image/image-drag/Expression-Message.png"/>
       </div>
       
     </section>
