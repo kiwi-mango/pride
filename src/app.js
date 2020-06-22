@@ -1,11 +1,16 @@
 import GenderBread from './views/genderbread.js';
 import MemoryGame from './views/memory-game.js';
 import GenderPuzzle from './views/puzzle.js'
+import Intro from './views/intro.js';
 import Home from './views/home.js';
 
 const route = [
   {
     path:'/',
+    component: Intro,
+  },
+  {
+    path:'/home',
     component: Home,
   },
   {
