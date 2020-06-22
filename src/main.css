@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -217,4 +217,41 @@ footer a {
 }
 #fondo {
   opacity: 0.3;
+}
+
+/* Inicia estilos texto */
+.text-js{
+  opacity: 0;
+  font-size: 35px;
+}
+
+.container {
+  background-image: url('../image/fondo_arcoiris.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 80%;
+  height: 45vh;
+  margin: 10% 10% 0 10%; 
+  padding: 2%;
+}
+
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }

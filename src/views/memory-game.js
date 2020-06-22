@@ -2,7 +2,7 @@ const memoryGame = {
   render: () => {
     return `
       <div class="home_buttons">
-        <a href="/" class="btn"><img src="../image/bienes-raices.svg" alt="home"/></a>
+        <a href="/#/home" class="btn"><img src="../image/bienes-raices.svg" alt="home"/></a>
       </div>
       <section class="memory-game">
         <div class="memory-card" data-framework="identity">

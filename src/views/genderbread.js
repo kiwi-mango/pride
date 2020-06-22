@@ -2,7 +2,7 @@ const genderBread = {
   render: () => {
     return `
     <div class="home_buttons">
-      <a href="/" class="btn"><img src="../image/bienes-raices.svg" alt="home"/></a>
+      <a href="/#/home" class="btn"><img src="../image/bienes-raices.svg" alt="home"/></a>
     </div>
     <section class="">
       <div  data-type="cerebro" class="animate__rotateIn mensaje msj-cerebro  hidden__mensaje">
